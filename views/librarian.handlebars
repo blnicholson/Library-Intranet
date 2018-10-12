@@ -1,0 +1,167 @@
+<nav>
+    <div class="container">
+        <a href="/" id="logo">Library Portal</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+        <div class="five columns">
+            <button data-tab="patron-form" class="standard-button librarian-button" type="submit">Create Patron RECORDS</button>
+
+            <br>
+            <button data-tab="book-form" class="standard-button librarian-button" type="submit">Create Book Records</button>
+
+            <br>
+
+            <button data-tab="media-form" class="standard-button librarian-button" type="submit">Create Media Records</button>
+        </div>
+
+
+
+        <div class="seven columns div-styling">
+            <div class="current librarian-form-content librarian-welcome">
+                <div class="row">
+                    <h1>Welcome, Librarian! Click the buttons at the left to create or update any of the library's records.</h1>
+                </div>
+            </div>
+
+
+              <!--Create patron -->
+            <div id="patron-form" class="first librarian-form-content">
+                <form id="userInput" class="user-div">
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="patronName">Patron's Full Name</label>
+                            <input class="u-full-width"  type="name" placeholder="Full Name" id="patronName">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="patronPhone">Phone Number</label>
+                            <input class="u-full-width" type="phone" placeholder="(555)555-5555" id="patronPhone">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="twelve columns">
+                            <label for="cardNumber">Card Number</label>
+                            <input class="u-full-width" id="cardNumber" type="number" placeholder="123" id="cardNumber">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="exampleEmailInput">Email</label>
+                            <input class="u-full-width" id="patronEmail" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="adultChildInput">Adult or Child</label>
+                            <select class="u-full-width" id="patronClassification">
+                                <option value="Option 1">Child</option>
+                                <option value="Option 2">Adult</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button class="standard-button" id="inputUser" type="submit">SUBMIT</button>
+                </form>
+            </div>
+
+            <!--Book Input Form-->
+            <div id="book-form" class="second librarian-form-content">
+                <form id="bookInput" class="book-div">
+
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="bookTitleInput">Book Title</label>
+                            <input class="u-full-width" type="name" placeholder="Book Title" id="bookTitleInput">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="authorInput">Author</label>
+                            <input class="u-full-width" type="name" placeholder="Author" id="authorInput">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="genreInput">Book Genre</label>
+                            <input class="u-full-width" type="name" placeholder="Fiction" id="genreInput">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="audienceInput">Audience</label>
+                            <input class="u-full-width" type="name" placeholder="Adult" id="audienceInput">
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <label for="descriptionInput">Description</label>
+                    <textarea class="u-full-width" placeholder="Book Description Here..." id="descriptionInput"></textarea>
+
+                    {{!-- <label class="checkedOutInput">
+                        <input type="checkbox" id="checkedOut" value="true">
+                        <span class="label-body" >This item is checked out.</span>
+                    </label> --}}
+
+                    <button class="standard-button" id="inputBook" type="submit">SUBMIT</button>
+                </form>
+            </div>
+
+            <!--Media Input Form-->
+            <div id="media-form" class="third librarian-form-content">
+                <form id="mediaInput" class="media-div">
+
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="mediaTitleInput">Media Title</label>
+                            <input class="u-full-width" type="name" placeholder="Media Title" id="mediaTitleInput">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="authorInput">Director/Producer</label>
+                            <input class="u-full-width" type="name" placeholder="Director/Producer" id="mediaAuthorInput">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="six columns">
+                            <label for="genreInput">Genre</label>
+                            <input class="u-full-width" type="name" placeholder="Fiction" id="mediaGenreInput">
+                        </div>
+
+                        <div class="six columns">
+                            <label for="audienceInput">Audience</label>
+                            <input class="u-full-width" type="name" placeholder="Adult" id="mediaAudienceInput">
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <label for="descriptionInput">Description</label>
+                    <textarea class="u-full-width" placeholder="Description Here..." id="mediaDescriptionInput"></textarea>
+
+                    <button class="standard-button" id="inputMedia" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--User Input Form-->
+
+</div>

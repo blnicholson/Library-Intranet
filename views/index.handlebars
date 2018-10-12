@@ -1,0 +1,44 @@
+ <nav>
+    <div class="container">
+      <a href="/" id="logo">Library Portal</a>
+    </div>
+  </nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container main-contain">
+
+    <div class="row">
+      <div class="five columns">
+        <div class="div-styling">
+        <form>
+          <label for="exampleRecipientInput">Enter as patron or librarian</label>
+          <select class="u-full-width" id="exampleRecipientInput">
+            <option value="patron">Patron</option>
+            <option value="librarian">Librarian</option>
+          </select>
+          <textarea class="u-full-width" placeholder="Enter Library Card or ID #" id="patronLibrarianId"></textarea>
+          <button class="standard-button" id="landingExplorer" type="submit" value="Explore">EXPLORE</button>
+        </form>
+      </div>
+        
+        <div id="filler-index" class="div-styling">
+          <h1>Welcome to our library!</h1>
+        </div>
+
+      </div>
+      <div class="seven columns div-styling" id="catalog-search">
+        <h5>Recently added: </h5>
+        <div id="catalog-populate">
+          {{#each books}}
+          <li>{{this.title}} |
+          {{this.author}}</li>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+  </div>
+
+
